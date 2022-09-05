@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+h1, h2, p, form, body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header__container{
+    width: 100%;
+    background: url(img2/banner.jpg) no-repeat;
+    padding: 200px 0;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.header__content{
+    width: 50%;
+    margin: auto;
+}
+.header__content h1{
+    font-size: 48px;
+    line-height: 64px;
+}
+.header__content hr{
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.header__content p{
+    margin-top: 20px;
+    display: inline-block;
+    width: 60%;
+}
+.header__button{
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    cursor:pointer;
+    color: #fff;
+    background-color: transparent;
+    vertical-align: top;
+    margin: 20px; 
+}
+.header__cover{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(10, 24, 87, 0.7);
+    z-index: -1;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,400px);
+}
+h2{
+    font-size: 50px;
+    line-height: 70px;
+}
+.main h2{
+    display: inline-block;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+.main p{
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+.main__container{
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    padding: 200px 0;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main__content{
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    z-index: 2;
+}
+.main__container:nth-child(1){
+    background-image: url(img2/pic01.jpg);
+}
+.main__container:nth-child(2){
+    background-image: url(img2/pic02.jpg);
+    grid-column: 2/4;
+}
+.main__container:nth-child(3){
+    background-image: url(img2/pic03.jpg);
+    grid-column: 1/3;
+}
+.main__container:nth-child(4){
+    background-image: url(img2/pic04.jpg);
+}
+.main__container:nth-child(5){
+    background-image: url(img2/pic05.jpg);
+}
+.main__container:nth-child(6){
+    background-image: url(img2/pic06.jpg);
+    grid-column: 2/4;
+}
+.item__cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: 2s;
+}
+.item__cover:hover{
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+.cover-1{
+    background-color: rgba(99, 208, 214, 0.7);
+}
+.cover-2{
+    background-color: rgba(155, 103, 245, 0.7);
+}
+.cover-3{
+    background-color: rgba(240, 117, 96, 0.7);
+}
+.cover-4{
+    background-color: rgba(242, 202, 109, 0.7);
+}
+.cover-5{
+    background-color: rgba(127, 109, 242, 0.7);
+}
+.cover-6{
+    background-color: rgba(69, 105, 60, 0.7);
+}
+.about-me__container{
+    width: 100%;
+    height: 400px;
+    background-color: #2a2f4a;
+}
+.about-me__content{
+    color: #fff;
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    padding: 30px 0;
+}
+.about-me__content h2, .contact-me h2{
+    text-align: center;
+    color: #fff;
+}
+.about-me hr, .contact-me hr{
+    width: 100%;
+    border: 3px solid #fff;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.about-me__button{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+.contact-me__content{
+    width: 50%;
+    margin: auto;
+    padding: 50px 0;
+    padding-bottom: 100px;
+}
+.contact-me__container{
+    background-color: #242943;
+}
+form{
+    display: grid;
+    grid-template-areas: 'name__label email__label' 'name email' 'message__label .' 'message message' 'button .';
+    grid-template-rows: 25px 50px 25px 150px 50px;
+    gap: 15px;
+    color: #f1f1f1;
+}
+#name__label{
+    grid-area: name__label;
+}
+#name{
+    grid-area: name;
+}
+#email__label{
+    grid-area: email__label;
+}
+#email{
+    grid-area: email;
+}
+#message__label{
+    grid-area: message__label;
+}
+#message{
+    grid-area: message;
+}
+#button{
+    grid-area: button;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.contact-me label{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.contact-me input, .contact-me textarea{
+    background-color: #2a2f4a;
+    border: none;
+    outline: none;
+}
